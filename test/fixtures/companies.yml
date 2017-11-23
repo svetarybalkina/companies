@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  initial_date: 2017-11-24
+  staff_quantity: 1
+
+two:
+  title: MyString
+  initial_date: 2017-11-24
+  staff_quantity: 1

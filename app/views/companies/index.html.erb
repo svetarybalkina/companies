@@ -1,0 +1,27 @@
+<table class="table table-bordered table-striped table-condensed table-hover">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Initial date</th>
+      <th>Staff quantity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.title %></td>
+        <td><%= company.initial_date %></td>
+        <td><%= company.staff_quantity %></td>
+        <td><%= link_to 'Show', company %></td>
+        <td><%= link_to 'Edit', edit_company_path(company) %></td>
+        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Company', new_company_path %>
